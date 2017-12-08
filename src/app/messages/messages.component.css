@@ -1,0 +1,41 @@
+.message {
+	width:100%;
+	text-align:center;
+	position: fixed;
+	top:90%;
+	opacity: 0.8;
+	color: white;
+	font-weight: bold;
+	height:40px;
+
+
+}
+
+.message>div {
+	padding: 10px;
+	background-color: orange;
+	border: 1px solid red;
+	border-radius: 5px;
+}
+
+button.clear {
+  font-family: Arial;
+  background-color: #eee;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  cursor: hand;
+}
+button:hover {
+  background-color: #cfd8dc;
+}
+button:disabled {
+  background-color: #eee;
+  color: #aaa;
+  cursor: auto;
+}
+button.clear {
+  color: #888;
+  margin-bottom: 12px;
+}

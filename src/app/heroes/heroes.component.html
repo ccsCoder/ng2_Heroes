@@ -1,0 +1,13 @@
+<div class="master_panel">
+	<h2>The Heroes</h2>
+
+	<ul class="heroes">
+		<li *ngFor="let hero of heroes" (click)="onSelect(hero)" [class.selected]="hero===selectedHero">
+			<span class="badge">{{hero.id}}</span> {{hero.name}}
+		</li>
+	</ul>
+</div>
+
+<!-- Now include the HeroDetail child component and bind it to the selected hero -->
+<app-hero-detail [hero]="selectedHero"></app-hero-detail>
+
